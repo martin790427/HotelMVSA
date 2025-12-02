@@ -1,6 +1,6 @@
 # Hotel-MVSA-Quote-Tool 
 
-This is a static front-end quote tool for Hotel MVSA — supports multi-room, 3 breakfast-price columns (no / with1 / with2), and date-based rate categories.
+This is a static front-end quote tool for Hotel MVSA — supports multi-room, 2 breakfast-price columns (no / with1&with2), and date-based rate categories.
 
 ## Deploy (GitHub Pages)
 1. Create a new public repository on GitHub (e.g. `hotel-mvsa-quote-tool`).
