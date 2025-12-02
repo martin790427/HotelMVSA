@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hotel MVSA — 同業報價試算</title>
+  <title>Hotel MVSA — 同業報價試算（進階 Multi-room）</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
     </header>
 
     <section id="roomsArea" class="rooms-area">
-      <!-- dynamic room rows inserted here -->
+      <!-- 房型列會由 script 動態插入 -->
     </section>
 
     <section class="summary">
@@ -36,5 +36,61 @@
         <label>備註 / 傳送對象</label>
         <input type="text" id="memo" placeholder="例如：報價給 XX 旅行社">
       </div>
-      <div
+      <div class="summary-actions">
+        <button id="exportBtn" class="btn">匯出報價文字</button>
+        <button id="clearBtn" class="btn outline">清除欄位</button>
+      </div>
+    </section>
 
+    <section class="result-section">
+      <h2>報價明細</h2>
+      <pre id="resultBox" class="result-box"></pre>
+    </section>
+
+    <footer class="foot">
+      <p>資料來源：上傳之平/假/旺/特旺日定義與旅行社同業報價。上線前請再次核對 <code>script.js → PRICE_DATA</code> 的價格。</p>
+    </footer>
+  </main>
+
+  <!-- room row template -->
+  <template id="roomRowTemplate">
+    <div class="room-row">
+      <div class="row-left">
+        <label>房型</label>
+        <select class="roomType"></select>
+      </div>
+      <div class="row-mid">
+        <label>房數</label>
+        <input type="number" class="roomCount" value="1" min="1">
+      </div>
+      <div class="row-mid">
+        <label>成人</label>
+        <input type="number" class="roomAdults" value="2" min="1">
+      </div>
+      <div class="row-mid">
+        <label>兒童</label>
+        <input type="number" class="roomChildren" value="0" min="0">
+      </div>
+      <div class="row-mid">
+        <label>早餐方案</label>
+        <select class="roomBreakfast">
+          <option value="no">不含早</option>
+          <option value="b1">含 1 早</option>
+          <option value="b2">含 2 早</option>
+        </select>
+      </div>
+      <div class="row-mid">
+        <label>加購晚餐</label>
+        <input type="checkbox" class="roomDinner">
+      </div>
+      <div class="row-right">
+        <label>小計</label>
+        <div class="rowSubtotal">NT$ 0</div>
+        <button class="btn small removeBtn">移除</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
