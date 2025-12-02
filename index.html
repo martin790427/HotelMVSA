@@ -1,18 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <title>同業報價試算工具</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hotel MVSA - 同業報價試算 (Advanced)</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="container">
+    <header>
+      <h1>Hotel MVSA — 同業報價試算（進階版）</h1>
+      <p class="note">依照 2026 年平 / 假 / 旺 / 特旺 規則計算。遇特旺日（業務另報）會跳提醒。</p>
+    </header>
 
-  <h2>房價試算</h2>
+    <section class="form">
+      <div class="row">
+        <label>入住日</label>
+        <input type="date" id="checkin" />
+      </div>
+      <div class="row">
+        <label>退房日</label>
+        <input type="date" id="checkout" />
+      </div>
 
-  入住日期：<input type="date" id="d">
+      <div class="row">
+        <label>房型</label>
+        <select id="roomType"></select>
+      </div>
 
-  <button onclick="calc()">開始試算</button>
+      <div class="row">
+        <label>房數</label>
+        <input type="number" id="rooms" value="1" min="1" />
+      </div>
 
-  <h3 id="out"></h3>
+      <div class="row">
+        <label>成人數（每房上限 2）</label>
+        <input type="number" id="adults" value="2" min="1" />
+      </div>
+
+      <div class="row">
+        <label>兒童數（6–12 歲）</label>
+        <input type="number" id="children" value="0" min="0" />
+      </div>
+
+      <div class="row">
+        <label>早餐方案</label>
+        <select id="breakfast">
+          <option value="0">不含早餐</option>
+          <option value="1">含 1 早</option>
+          <option value="2">含 2 早</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label>加購晚餐（成人）</label>
+        <input type="checkbox" id="addDinner" />
+      </div>
+
+      <div class="row">
+        <button id="calcBtn">計算報價</button>
+        <button id="exportBtn">匯出報價文字</button>
+      </div>
+    </section>
+
+    <section class="result">
+      <h2>報價明細</h2>
+      <pre id="output" class="output"></pre>
+    </section>
+
+    <footer>
+      <p class="small">※ 若要修改價格 → 編輯 script.js 裡的 PRICE_DATA。</p>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
