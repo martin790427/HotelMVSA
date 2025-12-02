@@ -2,49 +2,49 @@
 const PRICE_DATA = {
   "Urban Deluxe (都會客房)": {
     rates:{
-      weekday: { no: 5000, b1& b2: 6200 },
-      weekend: { no: 5500, b1& b2: 6700 },
-      peak:    { no: 6000, b1& b2: 7200 },
+      weekday: { no: 5000, b1&b2: 6200 },
+      weekend: { no: 5500, b1&b2: 6700 },
+      peak:    { no: 6000, b1&b2: 7200 },
     },
     paxInfo:{ maxAdults:2 }
   },
   "The Studio（繆思家庭房）二中床": {
     rates:{
-      weekday: { no: 8000, b1& b2: 10400 },
-      weekend: { no: 8500, b1& b2: 10900 },
-      peak:    { no: 9000, b1& b2: 11400 },
+      weekday: { no: 8000, b1&b2: 10400 },
+      weekend: { no: 8500, b1&b2: 10900 },
+      peak:    { no: 9000, b1&b2: 11400 },
     },
     paxInfo:{ maxAdults:2 }
   },
   "The Studio（繆思三人房）三小床": {
     rates:{
-      weekday: { no: 7500, b1& b2: 9300 },
-      weekend: { no: 8000, b1& b2: 9800 },
-      peak:    { no: 8500, b1& b2: 10300 },
+      weekday: { no: 7500, b1&b2: 9300 },
+      weekend: { no: 8000, b1&b2: 9800 },
+      peak:    { no: 8500, b1&b2: 10300 },
     },
     paxInfo:{ maxAdults:4 }
   },
   "Sky Villa（天際別墅）": {
     rates:{
-      weekday: { no: 16700, b1& b2: 17900 },
-      weekend: { no: 17200, b1& b2: 18400 },
-      peak:    { no: 17700, b1& b2: 18900 },
+      weekday: { no: 16700, b1&b2: 17900 },
+      weekend: { no: 17200, b1&b2: 18400 },
+      peak:    { no: 17700, b1&b2: 18900 },
     },
     paxInfo:{ maxAdults:2 }
   },
   "The Villa（大地別墅）": {
     rates:{
-      weekday: { no: 13700, b1& b2: 14900 },
-      weekend: { no: 14200, b1& b2: 15400 },
-      peak:    { no: 14700, b1& b2: 15900 },
+      weekday: { no: 13700, b1&b2: 14900 },
+      weekend: { no: 14200, b1&b2: 15400 },
+      peak:    { no: 14700, b1&b2: 15900 },
     },
     paxInfo:{ maxAdults:2 }
   },
   "Winery Deluxe（酒莊客房）":{
     rates:{
-      weekday: { no: 5500, b1& b2: 6700 },
-      weekend: { no: 6000, b1& b2: 7200 },
-      peak:    { no: 6500, b1& b2: 7700 },
+      weekday: { no: 5500, b1&b2: 6700 },
+      weekend: { no: 6000, b1&b2: 7200 },
+      peak:    { no: 6500, b1&b2: 7700 },
     },
     paxInfo:{ maxAdults:2 }
   }
