@@ -6,55 +6,49 @@
 const PRICE_DATA = {
   "Urban Deluxe (都會客房)": {
     rates:{
-      weekday: { no: 5200, b1: 5700, b2: 6200 },
-      weekend: { no: 6200, b1: 6700, b2: 7200 },
-      peak:    { no: 6700, b1: 7200, b2: 7700 },
-      specialPeak: { no: null, b1: null, b2: null }
+      weekday: { no: 5000, b1& b2: 6200 },
+      weekend: { no: 5500, b1& b2: 6700 },
+      peak:    { no: 6000, b1& b2: 7200 },
     },
     paxInfo:{ maxAdults:2 }
   },
-  "The Studio（繆思）一大床": {
+  "The Studio（繆思家庭房）二中床": {
     rates:{
-      weekday: { no: 7500, b1: 8000, b2: 8500 },
-      weekend: { no: 8000, b1: 8500, b2: 9000 },
-      peak:    { no: 8500, b1: 9000, b2: 9500 },
-      specialPeak: { no: null, b1: null, b2: null }
+      weekday: { no: 8000, b1& b2: 10400 },
+      weekend: { no: 8500, b1& b2: 10900 },
+      peak:    { no: 9000, b1& b2: 11400 },
     },
     paxInfo:{ maxAdults:2 }
   },
-  "The Studio（繆思）三床": {
+  "The Studio（繆思三人房）三小床": {
     rates:{
-      weekday: { no: 8000, b1: 8500, b2: 9000 },
-      weekend: { no: 8500, b1: 9000, b2: 9500 },
-      peak:    { no: 9000, b1: 9500, b2:10000 },
-      specialPeak: { no: null, b1: null, b2: null }
+      weekday: { no: 7500, b1& b2: 9300 },
+      weekend: { no: 8000, b1& b2: 9800 },
+      peak:    { no: 8500, b1& b2: 10300 },
     },
     paxInfo:{ maxAdults:4 }
   },
   "Sky Villa（天際別墅）": {
     rates:{
-      weekday: { no:13700, b1:14200, b2:14700 },
-      weekend: { no:14700, b1:15200, b2:15700 },
-      peak:    { no:16700, b1:17200, b2:17700 },
-      specialPeak: { no:36800, b1:36800, b2:36800 }
+      weekday: { no: 16700, b1& b2: 17900 },
+      weekend: { no: 17200, b1& b2: 18400 },
+      peak:    { no: 17700, b1& b2: 18900 },
     },
     paxInfo:{ maxAdults:2 }
   },
   "The Villa（大地別墅）": {
     rates:{
-      weekday:{ no:15900, b1:16400, b2:16900 },
-      weekend:{ no:18400, b1:18900, b2:19400 },
-      peak:   { no:18900, b1:19400, b2:19900 },
-      specialPeak:{ no:32800, b1:32800, b2:32800 }
+      weekday: { no: 13700, b1& b2: 14900 },
+      weekend: { no: 14200, b1& b2: 15400 },
+      peak:    { no: 14700, b1& b2: 15900 },
     },
     paxInfo:{ maxAdults:2 }
   },
   "Winery Deluxe（酒莊客房）":{
     rates:{
-      weekday:{ no:16800, b1:17300, b2:17800 },
-      weekend:{ no:16800, b1:17300, b2:17800 },
-      peak:   { no:16800, b1:17300, b2:17800 },
-      specialPeak:{ no:null, b1:null, b2:null }
+      weekday: { no: 5500, b1& b2: 6700 },
+      weekend: { no: 6000, b1& b2: 7200 },
+      peak:    { no: 6500, b1& b2: 7700 },
     },
     paxInfo:{ maxAdults:2 }
   }
