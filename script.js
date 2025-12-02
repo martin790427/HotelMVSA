@@ -1,8 +1,4 @@
 // ============================================
-// Hotel MVSA — 修正版 script.js（穩定初始化）
-// ============================================
-
-// ------------- PRICE_DATA（請務必檢查與更新） -------------
 const PRICE_DATA = {
   "Urban Deluxe (都會客房)": {
     rates:{
@@ -205,7 +201,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
       const addDinner = r.querySelector(".roomDinner").checked;
 
       lines.push(`【房型 ${idx+1}】 ${roomType}  x ${count} 間`);
-      lines.push(` 成人 ${adults}，兒童 ${children}，早餐 ${breakfastOpt==="no"?"不含早":(breakfastOpt==="b1"?"含1早":"含2早")}，晚餐 ${addDinner?"有":"無"}`);
+      lines.push(` 成人 ${adults}，兒童 ${children}，早餐 ${breakfastOpt==="no"?"不含早":(breakfastOpt===" b1&b2"?"含1早或含2早")}，晚餐 ${addDinner?"有":"無"}`);
 
       let roomSubtotal = 0;
       nights.forEach(d=>{
